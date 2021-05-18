@@ -2,3 +2,4 @@
 venv
 *.sqlite3
 *.pyc
+gestao_rh/__pycache__/settings.cpython-39.pyc
