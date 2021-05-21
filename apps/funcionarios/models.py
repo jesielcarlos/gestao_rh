@@ -3,6 +3,7 @@ from django.db.models.fields import CharField
 from django.contrib.auth.models import User
 from apps.departamentos.models import Departamento
 from apps.empresa.models import Empresa
+from django.urls import reverse
 
 
 class Funcionario(models.Model):
@@ -11,6 +12,8 @@ class Funcionario(models.Model):
     departamentos = models.ManyToManyField(Departamento)
     empresa = models.ForeignKey(Empresa,on_delete=models.PROTECT,null=True,blank=True)
 
+    def get_absolute_url(self):
+        return reverse('list_funcionarios')
 
     def __str__(self):
         return self.nome
