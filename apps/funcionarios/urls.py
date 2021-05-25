@@ -7,4 +7,3 @@ urlpatterns = [
     path('editar/<int:pk>/',FuncionarioEdit.as_view(),name='update_funcionario'),
 
 ]
-
