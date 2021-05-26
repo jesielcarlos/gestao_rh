@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+    Excluir departamento
+    <br>
+    <br>
+    <form method="post">
+
+        {% csrf_token %}
+        <h2>Voçê tem certeza que deseja excluir o {{departamento}}</h2>
+        {{ form }}
+        <button class="btn btn-danger" type="submit">Confirmar</button>
+
+    </form>
+
+{%endblock%}
