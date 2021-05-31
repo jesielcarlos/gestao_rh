@@ -7,10 +7,11 @@
 
     {% for registroHE in object_list %}
 
-        {{registroHE}}
-        
+        <a href="{% url 'update_hora_extra' registroHE.id %}"> {{ registroHE }} </a>
+
         <br>
     {% endfor %}
 
+  
 
 {%endblock%}
