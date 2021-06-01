@@ -4,4 +4,4 @@ venv/
 db.sqlite3
 *.pyc
 gestao_rh/__pycache__/
-gestao_rh.pem
+*.pem
