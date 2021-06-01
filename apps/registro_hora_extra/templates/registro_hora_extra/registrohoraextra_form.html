@@ -11,6 +11,10 @@
         
         <br>
         <button class="btn btn-info" type="submit">Salvar</button>
+        
+        {% if object%}
+            <a href="{% url 'delete_hora_extra' object.id %}" class="btn btn-danger"> Deletar </a>
+        {%endif%}
 
     </form>
     <br>
