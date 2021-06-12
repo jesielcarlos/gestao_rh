@@ -2,9 +2,38 @@
 {% load bootstrap%}
 
 {% block main %}
+    <h3>Login</h3>
     <form method="post">
         {% csrf_token %}
         {{ form|bootstrap}}
+        <br>
         <button type="submit" class="btn btn-info"> Login </button>
     </form>
+
+
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background-color: rgb(232, 232, 235);
+            box-shadow: 8px 6px 4px rgba(50, 50, 50, 0.50);
+            border-radius: 10px;
+            width: 30%;
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button:hover{
+            transition: all 0.3s;
+            transform: scale(1.15);
+        }
+    </style>
+    
 {% endblock %}
