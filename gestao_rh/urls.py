@@ -13,4 +13,4 @@ urlpatterns = [
     path('horas-extras/',include('apps.registro_hora_extra.urls')),
     path('admin/', admin.site.urls),
     path('accounts/',include('django.contrib.auth.urls')),
-] + static(settings.MEDIA_URL,ducument_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
