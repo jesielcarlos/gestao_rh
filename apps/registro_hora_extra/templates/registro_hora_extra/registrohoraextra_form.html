@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load bootstrap %}
+{% load static %}
 
 {% block main %}
 
@@ -17,6 +18,16 @@
         {%endif%}
 
     </form>
+
+    <button onclick="teste()">Testar</button>
+
     <br>
+
+{%endblock%}
+
+{%block static%}
+
+    <script src="{% static 'js/jquery.js' %}"></script> 
+    <script src="{% static 'js/funcoes-ajax.js' %}"></script>     
 
 {%endblock%}
